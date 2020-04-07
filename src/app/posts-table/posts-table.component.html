@@ -1,0 +1,25 @@
+<br />
+<div class="container">
+ <div class="row">
+ <div class="col-md-12">
+ <a class="btn btn-success btn-sm pull-right" [routerLink]="['/admin/newPost']">+&nbsp;&nbsp;New Post</a><br /><br />
+ <table class="table table-hover">
+ <thead>
+ <tr>
+ <th>Title</th>
+ <th>Post Date</th>
+ <th>Category</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr *ngFor="let blogPost of blogPosts" (click)="rowClicked($event,blogPost._id)">
+ <td>{{ blogPost.title }}</td>
+ <td>{{ blogPost.postDate | date:'mediumDate' }}</td>
+ <td>{{ blogPost.category }}</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+</div>
+<br />
