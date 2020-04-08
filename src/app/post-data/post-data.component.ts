@@ -46,7 +46,7 @@ export class PostDataComponent implements OnInit {
       });
       
     });
-  
+
     this.data.updatePostById(this.post._id, this.post).subscribe();
   
   }
