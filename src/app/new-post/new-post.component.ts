@@ -27,7 +27,7 @@ export class NewPostComponent implements OnInit {
     this.blogPost.postedBy ="WEB422 Student";
     this.blogPost.views = 0;
     console.log(this.blogPost);
-    this.data.newPost(this.blogPost);
+    this.data.newPost(this.blogPost).subscribe();
     console.log("Add Completed");
     this.router.navigate(['/admin']);
   }
