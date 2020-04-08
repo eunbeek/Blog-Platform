@@ -47,7 +47,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/_redirects"
+              "src/a_redirects"
             ],
             "styles": [
               "src/styles.css"
