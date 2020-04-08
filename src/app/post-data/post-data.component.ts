@@ -42,9 +42,9 @@ export class PostDataComponent implements OnInit {
 
         this.data.getPostbyId(params['id']).subscribe(data => {
           this.post = data;
-          this.post.views++;
+          
       });
-
+      this.post.views++;
     });
     
     this.data.updatePostById(this.post._id, this.post).subscribe();
