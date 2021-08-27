@@ -1,6 +1,7 @@
 # Blog- Platform
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
+https://confident-poitras-da774e.netlify.app
 
 ## Development server
 
